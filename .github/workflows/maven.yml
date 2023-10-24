@@ -29,4 +29,4 @@ jobs:
       run: mvn -B package --file ./User.Expense.Tracker/pom.xml
 
     - name: Execute Jar file
-      run: sudo kill -9 `sudo lsof -t -i:8080` & sudo java -jar /home/ubuntu/actions-runner/_work/Weekly-test-AWS-User-expenses/User.Expense.Tracker/target/User.Expense-Tracker.0.0.1-SNAPSHOT.jar &
+      run: sudo kill -9 `sudo lsof -t -i:8080` & sudo java -jar /home/ubuntu/actions-runner/_work/Weekly-test-AWS-User-expenses/User.Expense.Tracker/Weekly-test-AWS-User-expenses/target/User.Expense-Tracker.0.0.1-SNAPSHOT.jar &
